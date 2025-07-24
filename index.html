@@ -12,8 +12,12 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
     <!-- icons -->
     <link
@@ -22,82 +26,150 @@
     />
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <!-- style --> 
-    <link rel="stylesheet" href="css/style1.css">    
-    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7">
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style1.css" />
+    <link
+      href="/docs/5.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+    />
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/album/"
+    />
   </head>
 
   <body>
-   <!-- sidebar start-->
-   <nav class="main-menu">
-    <ul>
-        <li><a href="index.php"><i class="fa fa-home nav-icon"></i><span class="nav-text">Home</span></a></li>
-        <li class="has-dropdown">
-            <a href="index.php"><i class="fa fa-film nav-icon"></i><span class="nav-text">Rekomendasi</span></a>
-            <ul class="dropdown">
-                <li><a href="movie.php">Movie</a></li>
-                <li><a href="series.php">Series</a></li>
-            </ul>
+    <!-- sidebar start-->
+    <nav class="main-menu">
+      <ul>
+        <li>
+          <a href="index.html"
+            ><i class="fa fa-home nav-icon"></i
+            ><span class="nav-text">Home</span></a
+          >
         </li>
-        <li><a href="review.php"><i class="fa fa-star nav-icon"></i><span class="nav-text">Review</span></a></li>
-    </ul>
-    <ul class="logout">
-        <li><a href="profile.php"><i class="fa-solid fa-user nav-icon"></i><span class="nav-text">Profile</span></a></li>
-        <li><a href=""><i class="fa fa-right-from-bracket nav-icon"></i><span class="nav-text">Logout</span></a></li>
-    </ul>
-</nav>
+        <li class="has-dropdown">
+          <a href="index.html"
+            ><i class="fa fa-film nav-icon"></i
+            ><span class="nav-text">Rekomendasi</span></a
+          >
+          <ul class="dropdown">
+            <li><a href="movie.html">Movie</a></li>
+            <li><a href="series.html">Series</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="review.html"
+            ><i class="fa fa-star nav-icon"></i
+            ><span class="nav-text">Review</span></a
+          >
+        </li>
+      </ul>
+      <ul class="logout">
+        <li>
+          <a href="profile.html"
+            ><i class="fa-solid fa-user nav-icon"></i
+            ><span class="nav-text">Profile</span></a
+          >
+        </li>
+        <li>
+          <a href=""
+            ><i class="fa fa-right-from-bracket nav-icon"></i
+            ><span class="nav-text">Logout</span></a
+          >
+        </li>
+      </ul>
+    </nav>
 
     <!-- konten start -->
 
-<!-- carousel -->
+    <!-- carousel -->
 
-<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
 
-
-    <div class="carousel-inner">
+      <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-        <video class="d-block w-100" autoplay loop muted>
-                <source src="img/0314.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+          <video class="d-block w-100" autoplay loop muted>
+            <source src="img/0314.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-        <img src="img/2.png" class="d-block w-100" alt="background1.jpg">
+          <img src="img/2.png" class="d-block w-100" alt="background1.jpg" />
         </div>
         <div class="carousel-item" data-bs-interval="2000">
-        <img src="img/3.png" class="d-block w-100" alt="aboutme.jpg">
+          <img src="img/3.png" class="d-block w-100" alt="aboutme.jpg" />
         </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-    </button>
+      </button>
     </div>
 
-    <br>
+    <br />
 
     <!-- Card -->
     <div class="container">
-
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
           <div class="card shadow-sm">
-          <img src="img/film.jpg" class="card-img-top" alt="ponyo">
+            <img src="img/film.jpg" class="card-img-top" alt="ponyo" />
             <div class="card-body">
-              <p class="card-text">Temukan berbagai macam film dari berbagai genre.</p>
+              <p class="card-text">
+                Temukan berbagai macam film dari berbagai genre.
+              </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                <a href="movie.php"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                  <a href="movie.html"
+                    ><button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
@@ -105,12 +177,21 @@
         </div>
         <div class="col">
           <div class="card shadow-sm">
-          <img src="img/series.jpg" class="card-img-top" alt="ponyo">
+            <img src="img/series.jpg" class="card-img-top" alt="ponyo" />
             <div class="card-body">
-              <p class="card-text">Temukan berbagai series dari berbagai genre.</p>
+              <p class="card-text">
+                Temukan berbagai series dari berbagai genre.
+              </p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <a href="series.php"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                  <a href="series.html"
+                    ><button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                    >
+                      View
+                    </button></a
+                  >
                 </div>
               </div>
             </div>
@@ -119,13 +200,11 @@
       </div>
     </div>
 
-
-
     <!-- konten start -->
     <section class="gallery">
       <div class="caption">
         <h3>Drama Series</h3>
-        <a href="series/series.php#Drama">See all >></a>
+        <a href="series/series.html#Drama">See all >></a>
       </div>
       <div class="gallery-container">
         <div class="gallery-item">
@@ -179,7 +258,7 @@
         </div>
         <div class="caption">
           <h3>Thriller Series</h3>
-          <a href="series/series.php#Thriller">See all >></a>
+          <a href="series/series.html#Thriller">See all >></a>
         </div>
         <div class="gallery-container">
           <div class="gallery-item">
@@ -234,7 +313,7 @@
         </div>
         <div class="caption">
           <h3>Misteri Series</h3>
-          <a href="series/series.php#Misteri">See all >></a>
+          <a href="series/series.html#Misteri">See all >></a>
         </div>
         <div class="gallery-container">
           <div class="gallery-item">
@@ -288,7 +367,7 @@
           </div>
           <div class="caption">
             <h3>Sekolah Series</h3>
-            <a href="series/series.php#Sekolah">See all >></a>
+            <a href="series/series.html#Sekolah">See all >></a>
           </div>
           <div class="gallery-container">
             <div class="gallery-item">
@@ -340,7 +419,7 @@
         </div>
         <div class="caption">
           <h3>Hukum Series</h3>
-          <a href="series/series.php#Hukum">See all >></a>
+          <a href="series/series.html#Hukum">See all >></a>
         </div>
         <div class="gallery-container">
           <div class="gallery-item">
@@ -410,16 +489,17 @@
 
         <div class="links">
           <a href="index.html">Home</a><br />
-          <a href="movie/movie.php">Movie</a><br />
-          <a href="series/series/.php">Series</a><br />
-          <a href="review.php">Review</a><br />
+          <a href="movie.html">Movie</a><br />
+          <a href="series.html">Series</a><br />
+          <a href="review.html">Review</a><br />
         </div>
       </div>
 
       <div class="credit">
-        <a href="pengembang.php">Created by <span>Nadia Ramadhani </span> | &copy; 2024. </a>
+        <a href="profile.html"
+          >Created by <span>Nadia Ramadhani </span> | &copy; 2024.
+        </a>
       </div>
-
     </footer>
 
     <!-- icons -->
