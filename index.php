@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jurnal</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- style --> 
+    <link rel="stylesheet" href="css/style1.css">    
+    <link href="/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+  </head>
+
+  <body>
+   <!-- sidebar start-->
+   <nav class="main-menu">
+    <ul>
+        <li><a href="index.php"><i class="fa fa-home nav-icon"></i><span class="nav-text">Home</span></a></li>
+        <li class="has-dropdown">
+            <a href="index.php"><i class="fa fa-film nav-icon"></i><span class="nav-text">Rekomendasi</span></a>
+            <ul class="dropdown">
+                <li><a href="movie.php">Movie</a></li>
+                <li><a href="series.php">Series</a></li>
+            </ul>
+        </li>
+        <li><a href="review.php"><i class="fa fa-star nav-icon"></i><span class="nav-text">Review</span></a></li>
+    </ul>
+    <ul class="logout">
+        <li><a href="profile.php"><i class="fa-solid fa-user nav-icon"></i><span class="nav-text">Profile</span></a></li>
+        <li><a href=""><i class="fa fa-right-from-bracket nav-icon"></i><span class="nav-text">Logout</span></a></li>
+    </ul>
+</nav>
+
+    <!-- konten start -->
+
+<!-- carousel -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+        <video class="d-block w-100" autoplay loop muted>
+                <source src="img/0314.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+        <img src="img/2.png" class="d-block w-100" alt="background1.jpg">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+        <img src="img/3.png" class="d-block w-100" alt="aboutme.jpg">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+    <br>
+
+    <!-- Card -->
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="img/film.jpg" class="card-img-top" alt="ponyo">
+            <div class="card-body">
+              <p class="card-text">Temukan berbagai macam film dari berbagai genre.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href="movie.php"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="img/series.jpg" class="card-img-top" alt="ponyo">
+            <div class="card-body">
+              <p class="card-text">Temukan berbagai series dari berbagai genre.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="series.php"><button type="button" class="btn btn-sm btn-outline-secondary">View</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- konten start -->
+    <section class="gallery">
+      <div class="caption">
+        <h3>Drama Series</h3>
+        <a href="series/series.php#Drama">See all >></a>
+      </div>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="img/harry potter.jpg" alt="Film Poster 1" />
+          <div class="overlay">
+            <h4>Harry Potter</h4>
+            <p>Drama | 8 Season</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/reborn rich.jpg" alt="Film Poster 1" />
+          <div class="overlay">
+            <h4>Reborn Rich</h4>
+            <p>Drama | 16 Episode</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/the golden spoon.jpg" alt="Film Poster 1" />
+          <div class="overlay">
+            <h4>The Golden Spoon</h4>
+            <p>Drama | 16 Episode</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/dr john.jpg" alt="Film Poster 1" />
+          <div class="overlay">
+            <h4>Dr John</h4>
+            <p>Drama | 16 Episode</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/cross fire.jpg" alt="Film Poster 1" />
+          <div class="overlay">
+            <h4>Cross Fire</h4>
+            <p>Drama | 38 Episode</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/the good bad mother.jpg" alt="Film Poster 1" />
+          <div class="overlay">
+            <h4>The Good Bad Mother</h4>
+            <p>Drama | 16 Episode</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="img/see you in my 19 life.jpg" alt="Film Poster 1" />
+          <div class="overlay">
+            <h4>See You In My 19th Life</h4>
+            <p>Drama | 16 Episode</p>
+          </div>
+        </div>
+        <div class="caption">
+          <h3>Thriller Series</h3>
+          <a href="series/series.php#Thriller">See all >></a>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="img/a shop for killers.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>A Shop for Killers</h4>
+              <p>Thriller | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/revenant.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Revenant</h4>
+              <p>Thriller | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/mouse.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Mouse</h4>
+              <p>Thriller | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/squid game.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Squid Game</h4>
+              <p>Thriller | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/happines.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Happiness</h4>
+              <p>Thriller | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/blind.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Blind</h4>
+              <p>Thriller | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/the killers shopping list.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>The Killers Shopping List</h4>
+              <p>Thriller | 16 Episode</p>
+            </div>
+          </div>
+        </div>
+        <div class="caption">
+          <h3>Misteri Series</h3>
+          <a href="series/series.php#Misteri">See all >></a>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="img/taxi driver.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Taxi Driver</h4>
+              <p>Misteri | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/taxi driver 2.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Taxi Driver 2</h4>
+              <p>Misteri | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/big mouth.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Big Mouth</h4>
+              <p>Misteri | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/move to heaven.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Move To Heaven</h4>
+              <p>Misteri | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/police university.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Police University</h4>
+              <p>Misteri | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/partner for justice.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Partner For Justice</h4>
+              <p>Misteri | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/voice.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Voice</h4>
+              <p>Misteri | 16 Episode</p>
+            </div>
+          </div>
+          <div class="caption">
+            <h3>Sekolah Series</h3>
+            <a href="series/series.php#Sekolah">See all >></a>
+          </div>
+          <div class="gallery-container">
+            <div class="gallery-item">
+              <img src="img/18 again.jpg" alt="Film Poster 1" />
+              <div class="overlay">
+                <h4>18 Again</h4>
+                <p>Sekolah | 16 Episode</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/twenty five twenty one.jpg" alt="Film Poster 1" />
+              <div class="overlay">
+                <h4>Twenty Five Twenty One</h4>
+                <p>Sekolah | 16 Episode</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/extraordinary you.jpg" alt="Film Poster 1" />
+              <div class="overlay">
+                <h4>Extraordinary You</h4>
+                <p>Sekolah | 16 Episode</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/at eighteen.jpg" alt="Film Poster 1" />
+              <div class="overlay">
+                <h4>At Eighteen</h4>
+                <p>Sekolah | 16 Episode</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img src="img/love revolution.jpg" alt="Film Poster 1" />
+              <div class="overlay">
+                <h4>Love Revolution</h4>
+                <p>Sekolah | 16 Episode</p>
+              </div>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="img/Going to You At A Speed of 493 Km.jpg"
+                alt="Film Poster 1"
+              />
+              <div class="overlay">
+                <h4>Going You At A Speed of 493 Km</h4>
+                <p>Sekolah | 16 Episode</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="caption">
+          <h3>Hukum Series</h3>
+          <a href="series/series.php#Hukum">See all >></a>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="img/one dollar lawyer.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>One Dollar Lawyer</h4>
+              <p>Hukum | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/junevile justice.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>junevile Justice</h4>
+              <p>Hukum | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/extraordinary woo.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Extraordinary Woo</h4>
+              <p>Hukum | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/suspicious partner.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Suspicious Partner</h4>
+              <p>Hukum | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/flower of evil.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Flower Of Evil</h4>
+              <p>Hukum | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/criminal minds.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Criminal Minds</h4>
+              <p>Hukum | 16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/lawles lawyer.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Lawles Lawyer</h4>
+              <p>Hukum | 16 Episode</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- konten end -->
+
+    <!-- footer start -->
+    <footer>
+      <div class="col">
+        <div class="social">
+          <a href="https://www.instagram.com/nadia._.ramadhani_"
+            ><i data-feather="instagram"></i
+          ></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+
+        <div class="links">
+          <a href="index.html">Home</a><br />
+          <a href="movie/movie.php">Movie</a><br />
+          <a href="series/series/.php">Series</a><br />
+          <a href="review.php">Review</a><br />
+        </div>
+      </div>
+
+      <div class="credit">
+        <a href="pengembang.php">Created by <span>Nadia Ramadhani </span> | &copy; 2024. </a>
+      </div>
+
+    </footer>
+
+    <!-- icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <script src="/docs/5.3/assets/js/color-modes.js"></script>
+  </body>
+</html>

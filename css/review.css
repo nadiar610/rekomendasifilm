@@ -1,0 +1,95 @@
+        /* Judul */
+        h2 {
+          text-align: center;
+          color: white;
+          font-size: 28px;
+          font-weight: bold;
+          margin-top: 20px;
+      }
+
+      /* Tabel */
+      .table-container {
+          overflow-x: auto;
+          margin-left: 4rem;
+      }
+
+      table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+      }
+
+      table, th, td {
+          border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+
+      th {
+          background-color: #5d3a9b;
+          color: white;
+          padding: 10px;
+          text-align: center;
+      }
+
+      td {
+          padding: 10px;
+          text-align: center;
+          background-color: rgba(255, 255, 255, 0.2);
+          color: white;
+      }
+
+      tr:nth-child(even) {
+          background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      tr:hover {
+          background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      /* Tombol */
+      .btn {
+          padding: 5px 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          text-decoration: none;
+      }
+
+      .btn-warning {
+          background-color: #ffc107;
+          color: black;
+      }
+
+      .btn-danger {
+          background-color: #dc3545;
+          color: white;
+      }
+
+      .btn:hover {
+          opacity: 0.8;
+      }
+
+      /* Link tambah film */
+      .add-movie {
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          display: inline-block;
+          margin-bottom: 10px;
+          background-color: #5d3a9b;
+          border: 1px solid #d8bfd8;
+      }
+
+      .add-movie:hover {
+          text-decoration: underline;
+      }
+
+      .text-center {
+          margin-top: 30px; /* Tambah jarak antara tabel dan tombol */
+      }
+
+      .add-movie {
+          padding: 12px 20px;
+          font-size: 16px;
+          font-weight: bold;
+          border-radius: 8px;
+      }

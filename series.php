@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jurnal</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/series.css" />
+  </head>
+
+  <body>
+    <!-- sidebar start-->
+    <nav class="main-menu">
+    <ul>
+        <li><a href="index.php"><i class="fa fa-home nav-icon"></i><span class="nav-text">Home</span></a></li>
+        <li class="has-dropdown">
+            <a href="index.php"><i class="fa fa-film nav-icon"></i><span class="nav-text">Rekomendasi</span></a>
+            <ul class="dropdown">
+                <li><a href="movie.php">Movie</a></li>
+                <li><a href="series.php">Series</a></li>
+            </ul>
+        </li>
+        <li><a href="review.php"><i class="fa fa-star nav-icon"></i><span class="nav-text">Review</span></a></li>
+    </ul>
+    <ul class="logout">
+        <li><a href="profile.php"><i class="fa-solid fa-user nav-icon"></i><span class="nav-text">Profile</span></a></li>
+        <li><a href=""><i class="fa fa-right-from-bracket nav-icon"></i><span class="nav-text">Logout</span></a></li>
+    </ul>
+</nav>
+
+    <!-- Sidebar end -->
+
+    <section class="main-content">
+      <div class="genre">
+        <div class="box">
+          <a href="series.php#drama">Drama</a>
+        </div>
+        <div class="box">
+          <a href="series.php#thriller">Thriller</a>
+        </div>
+        <div class="box">
+          <a href="series.php#misteri">Misteri</a>
+        </div>
+        <div class="box">
+          <a href="series.php#sekolah">Sekolah</a>
+        </div>
+        <div class="box">
+          <a href="series.php#hukum"> Hukum </a>
+        </div>
+        <div class="box">
+          <a href="series.php#romance">Romance</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="Drama" id="drama">
+        <br />
+        <h2>Drama</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="img/harry potter.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Harry Potter</h4>
+              <p>8 Season</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/the golden spoon.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>the golden spoon</h4>
+              <p>16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/daily dose of sunshine.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>daily dose of sunshine</h4>
+              <p>16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/dr romantic.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>dr romantic</h4>
+              <p>16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/dr john.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>dr john</h4>
+              <p>16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/cross fire.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Cross fire</h4>
+              <p>16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/the good bad mother.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>the good bad mother</h4>
+              <p>16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/moving.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>moving</h4>
+              <p>16 Episode</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/twinkling watermelon.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>twinkling watermelon</h4>
+              <p>16 Episode</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Thriller" id="thriller">
+        <br />
+        <h2>Thriller</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="img/a shop for killers.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>A Shop for Killers</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/revenant.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>revenant</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/mouse.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>mouse</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/squid game.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>squid game</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/happines.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>happines</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/blind.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>blind</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/the killers shopping list.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>the killers shopping list</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="misteri" id="misteri">
+        <br />
+        <h2>Misteri</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="img/taxi driver.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>taxi driver</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/taxi driver 2.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>taxi driver 2</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/big mouth.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>big mouth</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/move to heaven.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>move to heaven</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/police university.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>police university</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/partner for justice.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>partner for justice</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/voice.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>Voice</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sekolah" id="sekolah">
+        <br />
+        <h2>Sekolah</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="img/18 again.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>18 again</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/twenty five twenty one.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>twenty five twenty one</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/extraordinary you.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>extraordinary you</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/at eighteen.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>at eighteen</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/love revolution.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>love revolution</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/Going to You At A Speed of 493 Km.jpg" alt="" />
+            <div class="overlay">
+              <h4>Going to You At A Speed of 493 Km</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/weightlifting fairy kimbookjoo.jpg" alt="" />
+            <div class="overlay">
+              <h4>weightlifting fairy kimbookjoo</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hukum" id="hukum">
+        <br />
+        <h2>Hukum</h2>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="img/one dollar lawyer.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>one dollar lawyers</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/junevile justice.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>junevile justice</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/extraordinary woo.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>extraordinary woo</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/suspicious partner.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>suspicious partner</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/flower of evil.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>flower of evil</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/criminal minds.jpg" alt="Film Poster 1" />
+            <div class="overlay">
+              <h4>criminal minds</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/lawles lawyer.jpg" alt="" />
+            <div class="overlay">
+              <h4>lawles lawyer</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="romance" id="romance">
+        <br />
+        <h2>Romance</h2>
+        <div class="gallery-container" id="Drama">
+          <div class="gallery-item">
+            <img src="img/hometown cha cha cha.jpg" alt="" />
+            <div class="overlay">
+              <h4>hometown cha cha cha</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/business proposal.jpg" alt="" />
+            <div class="overlay">
+              <h4>business proposal</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/king the land.jpg" alt="" />
+            <div class="overlay">
+              <h4>king the land</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/true beauty.jpg alt=" />
+            <div class="overlay">
+              <h4>true beauty</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/what wrong with secretary kim.jpg" alt="" />
+            <div class="overlay">
+              <h4>what wrong with secretary kims</h4>
+              <p>Thriller | Episode 1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer start -->
+    <footer>
+      <div class="col">
+        <div class="social">
+          <a href="https://www.instagram.com/nadia._.ramadhani_"
+            ><i data-feather="instagram"></i
+          ></a>
+          <a href="#"><i data-feather="twitter"></i></a>
+        </div>
+
+        <div class="links">
+          <a href="index.html">Home</a><br />
+          <a href="movie/movie.php">Movie</a><br />
+          <a href="series/series/.php">Series</a><br />
+          <a href="review.php">Review</a><br />
+        </div>
+      </div>
+
+      <div class="credit">
+        <a href="pengembang.php">Created by <span>Nadia Ramadhani </span> | &copy; 2024. </a>
+      </div>
+
+    <!-- icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

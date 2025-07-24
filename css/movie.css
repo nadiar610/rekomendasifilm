@@ -1,0 +1,284 @@
+:root {
+  --satu: #031624;
+  --dua: #044b4a;
+  --tiga: #5fbe92;
+  --empat: #30ffa4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  min-height: auto;
+}
+
+body {
+  background-color: var(--dua);
+  color: #fff;
+}
+
+/* Navbar */
+.main-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 60px;
+  overflow: hidden;
+  background: #031624d5;
+  transition: width 0.05s linear;
+  -webkit-transition: width 0.05s linear;
+  z-index: 10;
+  padding-top: 10px;
+}
+
+.main-menu:hover {
+  width: 180px;
+  overflow: visible;
+}
+
+.main-menu > ul > li {
+  position: relative;
+  display: block;
+  width: 180px;
+}
+
+.main-menu > ul > li > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
+  padding: 10px 0;
+}
+
+.nav-icon {
+  width: 60px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav-text {
+  width: 120px;
+  height: 20px;
+  font-family: "Mulish", sans-serif;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+}
+
+.logout {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.main-menu li:hover > a,
+.main-menu li.active > a,
+.main-menu li > a:focus {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(29, 79, 215, 0.7);
+}
+
+/* slidebar */
+.slideshow-container {
+  margin: auto;
+  padding-left: 3.9rem;
+}
+.slide {
+  display: none;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  padding: 16px;
+  color: #45a049;
+  transition: 0.6s ease;
+  border-radius: 0 10px 10px 0;
+  user-select: none;
+}
+.prev {
+  left: 3.9rem;
+}
+.next {
+  right: 0;
+  border-radius: 10px 0 0 10px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Galery */
+.caption {
+  display: flex;
+  gap: 65rem;
+}
+
+.caption a {
+  color: white;
+  text-decoration: none;
+}
+
+:root {
+  --satu: #031624;
+  --dua: #044b4a;
+  --tiga: #5fbe92;
+  --empat: #30ffa4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.main-content .genre {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+}
+
+.main-content .genre .box a {
+  margin: 1rem; 
+  display: inline-block; 
+  padding: 1rem 3rem; 
+  background-color: #30ffa4; 
+  border-radius: 10px; 
+  text-align: center; 
+  color: white;
+  font-size: 20px;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 55px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.gallery-item {
+  position: relative; 
+  margin: 1rem;
+}
+
+.gallery-item img {
+  width: 8rem;
+  height: 12rem;
+  transition: transform 0.1s ease;
+  overflow: hidden; 
+  border-radius: 8px;
+  border: 1px solid var(--empat);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 8px;
+  pointer-events: none; /* Prevent interaction with the overlay */
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+  transform: scale(1.1);
+}
+.overlay h4 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.overlay p {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+/* --footer-- */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 7%;
+  background-color: var(--satu);
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+footer .col {
+  display: flex;
+}
+footer .social a {
+  color: #fff;
+  padding: 0.5rem;
+}
+footer .social a:hover {
+  color: var(--empat);
+}
+footer .links a {
+  font: 300 1rem Poppins;
+  display: inline-block;
+  color: #fff;
+  margin: 0.01rem;
+  margin-left: 5rem;
+}
+footer .links a:hover {
+  color: var(--empat);
+}
+footer .credit p {
+  font: 100 1rem Poppins;
+  color: #fff;
+  margin: 1rem;
+  margin-top: 25%;
+}
+footer .credit p span {
+  color: #fff4b4;
+}
+/* --footer end-- */

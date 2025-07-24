@@ -1,0 +1,125 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Body */
+  body {
+    color: #333;
+    text-align: center;
+    /* padding: 20px; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.8)),
+      url("/pweb2nadia/WebJurnalFilm/img/bg5.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  /* Heading */
+  h2 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2rem;
+  }
+  
+  /* Container untuk profil */
+  .container {
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.452);
+    padding: 30px;
+    max-width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Gaya untuk gambar profil */
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  /* Tabel Profil Pengguna */
+  table {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #ddd;
+  }
+  
+  th,
+  td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  th {
+    background: #5d3a9b;
+    color: white;
+  }
+  
+  td {
+    background-color: #fafafa;
+  }
+  
+  /* Tombol Edit Profil */
+  .edit-button {
+    display: inline-block;
+    background-color: #044b4a;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+  }
+  
+  .edit-button:hover {
+    background-color: #5d3a9b;
+  }
+  
+  /* Responsif */
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    .profile-img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    table th,
+    table td {
+      padding: 10px;
+    }
+  
+    .edit-button {
+      padding: 10px 20px;
+    }
+  }
+  
