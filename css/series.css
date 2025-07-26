@@ -15,7 +15,6 @@
   font-family: "Ubuntu", sans-serif;
 }
 
-/* ====== Struktur Utama ====== */
 .main-content {
   display: flex;
   justify-content: center;
@@ -86,7 +85,6 @@
   transform: scale(1.1);
 }
 
-/* ====== Overlay Perbaikan ===== */
 .overlay {
   position: absolute;
   top: 0;
@@ -103,19 +101,18 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   border-radius: 8px;
-  pointer-events: none; /* ✅ Overlay tidak menghalangi klik */
+  pointer-events: none;
 }
 
 .gallery-item:hover .overlay {
   opacity: 1;
-  pointer-events: auto; /* ✅ Overlay bisa diklik */
+  pointer-events: auto;
 }
 
-/* ====== Perbaikan Tombol Lihat Trailer ===== */
 .trailer-link {
   position: relative;
-  z-index: 20; /* ✅ Pastikan tombol di atas overlay */
-  pointer-events: auto; /* ✅ Pastikan tombol bisa diklik */
+  z-index: 20;
+  pointer-events: auto;
   text-decoration: none;
 }
 
@@ -140,7 +137,6 @@
 /* ====== Responsive Design ====== */
 @media (max-width: 1300px) {
 }
-
 
 @media (max-width: 1104px) {
 }
@@ -167,7 +163,7 @@
   }
 
   .gallery-item {
-    width: 45%; /* atau 48%, sesuaikan spacing */
+    width: 45%;
     height: auto;
   }
 
