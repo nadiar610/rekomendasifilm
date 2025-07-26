@@ -24,9 +24,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
 }
-
 /* Navbar */
 /* Sidebar utama */
 .main-menu {
@@ -73,7 +71,6 @@ body {
   /* transition: background 0.2s ease; */
   position: relative;
   text-decoration: none;
-
 }
 
 /* Ikon menu */
@@ -84,7 +81,6 @@ body {
   margin-left: 10px;
 }
 
-/* Sembunyikan teks sebelum hover */
 .nav-text {
   opacity: 0;
   width: 0;
@@ -94,7 +90,6 @@ body {
   transition: opacity 0.2s ease-in-out, width 0.2s ease-in-out;
 }
 
-/* Tampilkan teks saat hover */
 .main-menu:hover .nav-text {
   opacity: 1;
   width: auto;
@@ -122,15 +117,15 @@ body {
 .has-dropdown .dropdown {
   display: none;
   position: absolute;
-  top: 100%; /* Muncul di bawah menu Movies */
+  top: 100%;
   left: 0;
   background: #05263e;
   list-style: none;
   padding: 5px 0;
-  width: 120px; /* Lebar dropdown agar tidak melebihi navbar */
+  width: 120px;
   border-radius: 5px;
   z-index: 100;
-  overflow: hidden; /* Mencegah dropdown melebihi batas */
+  overflow: hidden;
 }
 
 .has-dropdown:hover .dropdown {
@@ -154,13 +149,12 @@ body {
   background-color: rgba(29, 79, 215, 0.9);
 }
 
-
 /* Corousel */
 
 .carousel-inner img,
 .carousel-inner video {
-  height: 400px; /* Sesuaikan tinggi sesuai keinginan */
-  object-fit: cover; /* Agar gambar tidak terdistorsi */
+  height: 400px;
+  object-fit: cover;
 }
 button:hover {
   background-color: rgba(0, 0, 0, 0);
@@ -171,8 +165,8 @@ button:hover {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Menyusun card di tengah halaman */
-  z-index: 1; /* Mengatur posisi card agar tidak tumpang tindih dengan elemen lain */
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 /* card */
@@ -184,10 +178,10 @@ button:hover {
   user-select: none;
 }
 
-.py-5 bg-body-tertiary{
+.py-5 bg-body-tertiary {
   background-color: #30ffa4;
 }
-.container{
+.container {
   background-color: none;
   margin-bottom: 20px;
 }
@@ -260,7 +254,7 @@ button:hover {
   opacity: 0;
   transition: opacity 0s ease;
   border-radius: 8px;
-  pointer-events: none; /* Prevent interaction with the overlay */
+  pointer-events: none;
 }
 
 .gallery-item:hover .overlay {
@@ -303,7 +297,6 @@ footer .links a {
   margin: 0.01rem;
   margin-left: 5rem;
   text-decoration: none;
-
 }
 footer .links a:hover {
   color: var(--empat);
@@ -314,10 +307,18 @@ footer .credit a {
   margin: 1rem;
   margin-top: 25%;
   text-decoration: none;
-
 }
 footer .credit a span {
   color: #fff4b4;
 }
 /* --footer end-- */
 
+@media (max-width: 600px) {
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.8)),
+      url("../img/bg\ vertical.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
