@@ -306,7 +306,7 @@ footer .credit a span {
 @media (max-width: 600px) {
   body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.336), rgba(0, 0, 0, 0.8)),
-      url("img/bg vertical.jpg");
+      url("/img/bg vertical.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
